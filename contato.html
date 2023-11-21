@@ -1,0 +1,95 @@
+<html></html>
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="icon.png" rel="shortcut icon">
+    <title>Pizzaria Seu Pizza</title>
+    <script>
+        alert("Utilize esse formulário para se comunicar conosco!")
+
+        dia = new Array("Domingo", "Segundda-Feira","Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado");
+        mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+        data = new Date;
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo_caixa">
+            <img src="logo.png" title="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a  href="cardapio.html">Cardápio</a></li>
+                    <li><a  href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="contato_titulo">🍕 Contato</h1>
+
+        <p class="contato_texto">
+            Preencha os campos abaixo com a sua dúvida, reclamação ou elogios e nossa equipe responderá o mais rápido possível.
+        </p>
+
+        <p class="contato_texto">
+            Nosso horário de funcionamento: Terça à Domingo das 18h às 23h
+            <a class="whatsapp-link" href="'https://wa.me/5599111112222" target="_blank">       
+                <i class="'fa fa-whatsapp"></i> (11) 4444-8888</a>
+        </p>
+
+        <form name="'frmContato" method="get" action="mailto:teste@gmail.com" target="_blank">
+
+            <fieldset>
+
+                <legend>Dados Pessoais</legend>
+                <label for="nomecompleto">* Nome Completo</label>
+                <input type="text" id="nomecompleto" name="" class="input-padrao" required>
+
+                <label for="email">* E-mail</label>
+                <input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">* Telefone</label>
+                <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXX-XXXX">
+
+                <label for="mensagem">* Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+                <label for="contato">Como prefere o nosso contato?
+
+                    <input type="radio" value="radio-email" name="Contato"> E-mail
+                    <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                    <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+
+                </label>
+
+                <br>
+                <label for="horario">Qual o motivo do seu contato?
+
+                    <select>
+
+                        <option>Selecione</option>
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option>Elogio</option>
+                        <option>Reclamação</option>
+
+                    </select>
+
+                </label>
+                <br>
+            </fieldset>
+
+            <label><input type="checkbox" class="chk"> Gostaria de receber nossas novidades por e-mail: </label>
+            <input type="submit" value="Enviar Formulário" class="contato_enviar">
+        </form>
+    </main>
+    <footer >
+        <img class="logo_footer" src="logo.png" alt="logo">
+             <p class="copyright">&copy; todos os direitos reservados para o Seu Pizza</p>
+ </footer>
+</body>
+</html>
